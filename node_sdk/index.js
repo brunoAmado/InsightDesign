@@ -30,6 +30,10 @@ class InsightDesignClient {
     return await this._request('/modes', 'GET');
   }
 
+  async getBrandDeck(title = 'SetMiddle Pitch Deck', subtitle = 'Open-Source SVG + Slidev') {
+    return await this._request(`/brand-deck?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(subtitle)}`, 'GET');
+  }
+
   async execute(payload = {}) {
     return await this._request('/execute', 'POST', payload);
   }

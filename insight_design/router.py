@@ -4,10 +4,14 @@ Can be mounted standalone (`:4024`) or inside `ChronicleRAG` (`:8765`).
 """
 
 from typing import Any, Dict
-from fastapi import APIRouter, Body, FastAPI
+from fastapi import APIRouter, Body, FastAPI, Query
 from fastapi.responses import Response
 
-from insight_design.engine import InsightDesignEngine, SUPPORTED_DESIGN_MODES
+from insight_design.engine import (
+    InsightDesignEngine,
+    SUPPORTED_DESIGN_MODES,
+    export_open_source_canva_brand_and_slidev_deck,
+)
 
 
 def create_insight_design_router() -> APIRouter:
@@ -21,6 +25,13 @@ def create_insight_design_router() -> APIRouter:
     @router.get("/modes")
     def get_modes() -> Dict[str, Any]:
         return {"ok": True, "modes": SUPPORTED_DESIGN_MODES}
+
+    @router.get("/brand-deck")
+    def get_open_source_canva_deck(
+        title: str = Query(default="SetMiddle Smart-City & Família Insights™ Pitch Deck"),
+        subtitle: str = Query(default="100% Open-Source SVG + Slidev / Marp Deck"),
+    ) -> Dict[str, Any]:
+        return export_open_source_canva_brand_and_slidev_deck(title=title, subtitle=subtitle)
 
     @router.post("/execute")
     def execute_action(payload: Dict[str, Any] = Body(default={})) -> Dict[str, Any]:
@@ -38,7 +49,7 @@ def create_insight_design_router() -> APIRouter:
   class InsightDesignElement extends HTMLElement {
     connectedCallback() {
       const apiBase = this.getAttribute('api-base') || '/api/design';
-      this.innerHTML = `<section role="region" aria-label="InsightDesign Widget" style="background:#0f172a;color:#f8fafc;border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:16px;font-family:Inter,system-ui,sans-serif;"><h3 style="margin:0;font-size:15px;font-weight:600;">InsightDesign™ (3D · Blender · CAD · Draw · Games)</h3><div aria-live="polite" style="font-size:12px;color:#94a3b8;margin-top:6px;font-variant-numeric:tabular-nums;">Active on ${apiBase}</div></section>`;
+      this.innerHTML = `<section role="region" aria-label="InsightDesign Widget" style="background:#0f172a;color:#f8fafc;border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:16px;font-family:Inter,system-ui,sans-serif;"><h3 style="margin:0;font-size:15px;font-weight:600;">InsightDesign™ (3D · Blender · CAD · Draw · Games · Slidev/SVG)</h3><div aria-live="polite" style="font-size:12px;color:#94a3b8;margin-top:6px;font-variant-numeric:tabular-nums;">Active on ${apiBase}</div></section>`;
     }
   }
   customElements.define('insight-design', InsightDesignElement);
