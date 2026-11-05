@@ -1,0 +1,9 @@
+[package]
+name = "insight_design_rs"
+version = "1.0.0"
+edition = "2021"
+description = "Rust Core Kernel for InsightDesign (3D Three.js, Blender, Parametric CAD STL, Interactive Draw & Games)"
+
+[[bin]]
+name = "insight_design_cli"
+path = "src/main.rs"
