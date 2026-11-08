@@ -1,7 +1,7 @@
 # Certified End-to-End User Story & Time-Lapse KPI Contract: InsightDesign (`SetMiddle Insight™`)
 
 - **Historical Continuity Verified**: `2022–2026` (Legacy Repo Docs + OpenAI ChatGPT + Gemini Web + Antigravity IDE + Git Commits)
-- **Ingested Project-Root Documentation (`CA-ERR-07` Zero-AI-Chat Fallback)**: `18` file(s) in `C:/Users/bruno/PycharmProjects/InsightDesign`
+- **Ingested Project-Root Documentation (`CA-ERR-07` Zero-AI-Chat Fallback)**: `20` file(s) in `C:/Users/bruno/PycharmProjects/InsightDesign`
 - **Supervised & Corrected By**: `ChronicleRAG (:8765)` + `Context-Assistant (:8090)`
 - **Service Port & Co-Hosted Demo**: Port `:4024` · `/projects/insight-design`
 - **Primary Hero KPI**: `SPATIAL, CAD & BRAND DESIGN MODES` (`5 MODES`)
@@ -22,9 +22,9 @@
 - `docs/HOW_TO_GUIDES.md`
 - `docs/SECURITY_AND_COMPLIANCE.md`
 - `docs/epics/insightdesign-3d-threejs-blender-cad-draw-and-games-engine.epic.md`
+- `docs/stories/blender-bpy-and-watertight-parametric-cad-stl-enclosure.feature`
 - `docs/stories/blender-bpy-and-watertight-parametric-cad-stl-enclosure.story.md`
-- `docs/stories/interactive-vector-draw-canvas-and-playable-wasd-3d-game.story.md`
-- `docs/stories/threejs-procedural-3d-scene-and-controlnet-pass-generator.story.md`
+- `docs/stories/interactive-vector-draw-canvas-and-playable-wasd-3d-game.feature`
 
 ## Verified Domain Capabilities
 - Three.js WebGL/WebGPU interactive 3D scene and playable WASD inspection generator
