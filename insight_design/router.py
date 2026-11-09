@@ -37,6 +37,12 @@ def create_insight_design_router() -> APIRouter:
     def execute_action(payload: Dict[str, Any] = Body(default={})) -> Dict[str, Any]:
         return engine.execute(payload)
 
+    @router.post("/parametric-mold")
+    def generate_parametric_mold_and_game_plan(payload: Dict[str, Any] = Body(default={})) -> Dict[str, Any]:
+        req = dict(payload or {})
+        req.setdefault("mode", "onshape_parametric_mold_plan")
+        return engine.execute(req)
+
     @router.post("/scrub")
     def scrub_text(payload: Dict[str, Any] = Body(default={})) -> Dict[str, Any]:
         return engine.scrub_input(str(payload.get("text", "")))

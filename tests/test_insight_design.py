@@ -102,6 +102,23 @@ class TestInsightDesign(unittest.TestCase):
         self.assertTrue(scrub_body["cnpd_gdpr_compliant"])
         self.assertNotIn("123456789", scrub_body["scrubbed_text"])
 
+    def test_06_onshape_parametric_mold_plan_and_game_multi_lod(self) -> None:
+        r_mold = self.client.post(
+            "/api/design/parametric-mold",
+            json={
+                "prompt": "CitySocket IP65 200x260x95mm M4 holes 0.2mm tolerance",
+                "dimensions_mm": {"width_mm": 200.0, "height_mm": 260.0, "depth_mm": 95.0, "hole_diameter_mm": 4.2, "fit_tolerance_mm": 0.20},
+            },
+        )
+        self.assertEqual(r_mold.status_code, 200)
+        body = r_mold.json()
+        self.assertTrue(body["ok"])
+        art = body["design_artifact"]
+        self.assertEqual(art["mode"], "onshape_parametric_mold_plan")
+        self.assertIn("FeatureScript 2411", art["onshape_featurescript"])
+        self.assertIn("injection_mold_lower_cavity", art["openscad_mold_code"])
+        self.assertIn("UCX_Parametric_Part_01", art["game_engine_lods"])
+
 
 if __name__ == "__main__":
     unittest.main()

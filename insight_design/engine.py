@@ -25,11 +25,17 @@ _INSIGHT_CORE_DIR = Path(__file__).resolve().parent.parent.parent / "InsightCore
 if _INSIGHT_CORE_DIR.exists() and str(_INSIGHT_CORE_DIR) not in sys.path:
     sys.path.insert(0, str(_INSIGHT_CORE_DIR))
 
+_CHRONICLE_RAG_DIR = Path(__file__).resolve().parent.parent.parent / "chronicle-rag"
+if _CHRONICLE_RAG_DIR.exists() and str(_CHRONICLE_RAG_DIR) not in sys.path:
+    sys.path.insert(0, str(_CHRONICLE_RAG_DIR))
+
 from insight_core_io import assert_no_binary_blob_in_db_row, build_cas_uri, scrub_pt_eu_pii_and_byok_secrets
 
 SUPPORTED_DESIGN_MODES: List[str] = [
     "threejs_3d_scene",
     "parametric_cad_stl",
+    "onshape_parametric_mold_plan",
+    "game_asset_multi_lod",
     "blender_bpy_script",
     "interactive_draw_canvas",
     "playable_3d_game",
@@ -174,6 +180,23 @@ def generate_design_artifact(
     stl_ascii = _build_watertight_cuboid_ascii_stl("InsightDesignEnclosure", w, d, h)
     canva_replacement = export_open_source_canva_brand_and_slidev_deck(title=prompt)
 
+    parametric_mold_plan: Dict[str, Any] = {}
+    try:
+        from blender_3d_ingest import convert_blend_or_prompt_to_parametric_cad_and_game_plan
+        hole_dia = float(dims.get("hole_diameter_mm", 3.2)) if isinstance(dims, dict) and "hole_diameter_mm" in dims else None
+        fit_tol = float(dims.get("fit_tolerance_mm", 0.20)) if isinstance(dims, dict) and "fit_tolerance_mm" in dims else None
+        parametric_mold_plan = convert_blend_or_prompt_to_parametric_cad_and_game_plan(
+            prompt=prompt,
+            width_mm=w,
+            height_mm=h,
+            depth_mm=d,
+            wall_thickness_mm=wall,
+            hole_diameter_mm=hole_dia,
+            fit_tolerance_mm=fit_tol,
+        )
+    except Exception:
+        pass
+
     return {
         "mode": norm_mode,
         "supported_modes": SUPPORTED_DESIGN_MODES,
@@ -182,7 +205,11 @@ def generate_design_artifact(
         "bounding_box_volume_mm3": round(w * d * h, 2),
         "watertight_manifold_mesh": True,
         "threejs_scene_code": threejs_code,
-        "blender_bpy_script": blender_bpy_code,
+        "blender_bpy_script": parametric_mold_plan.get("blender_parametric_bpy") or blender_bpy_code,
+        "onshape_featurescript": parametric_mold_plan.get("onshape_featurescript", ""),
+        "openscad_mold_code": parametric_mold_plan.get("openscad_code", ""),
+        "millimetric_parameters_mm": parametric_mold_plan.get("millimetric_parameters_mm", {"width_mm": w, "height_mm": h, "depth_mm": d, "wall_thickness_mm": wall}),
+        "game_engine_lods": parametric_mold_plan.get("game_engine_lods", ["Parametric_Part_LOD0", "Parametric_Part_LOD1", "Parametric_Part_LOD2", "UCX_Parametric_Part_01"]),
         "parametric_stl_preview": stl_ascii,
         "interactive_draw_svg": interactive_draw_svg,
         "playable_game_loop_js": game_loop_code,
