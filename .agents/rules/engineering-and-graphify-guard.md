@@ -31,6 +31,15 @@ description: Immune-to-Graphify-Install Engineering & High-Core Windows (<=61 wo
    - **If `ChronicleRAG` has full coverage** (`abstention_triggered: false`), apply its verified rules and architecture directly.
    - **If information is missing or partial** (`abstention_triggered: true` or live file lines are needed), **continue seamlessly** to: `(a) Graphify AST Graph` $\rightarrow$ `(b) Targeted read_file (StartLine..EndLine)` $\rightarrow$ `(c) External search_web`.
    - Enforce the **4-Tier Zero-Paid-Token LLM Failover Chain** (`Tier 1: Local PC Gemma 4` $\rightarrow$ `Tier 2: InsightCV LiteLLM Proxy :4000` $\rightarrow$ `Tier 3: EVO Tailscale 100.91.34.106:1234` $\rightarrow$ `Tier 4: Calling IDE Agent Handover`).
+8. **Explicit Antigravity Failover Notification & "Second Pair of Eyes" SLM Audit (`RULE-14`)**:
+   - Whenever a SetMiddle service or SLM (running on the single GPU or `EVO X2`) fails, times out, or produces low-confidence (`< 0.70`) results and Antigravity (Google subscription) takes over the work, **never fail over silently**: always announce which service failed and why (`⚠️ [ANTIGRAVITY FAILOVER & SECOND-EYES TAKEOVER]`), act as the user's second pair of eyes, and record a SHA-256 takeover receipt (`SetMiddleNetwork.route_llm_request` / `InsightCoreAIEngine.report_service_failover_and_second_eyes_audit`).
+9. **Strict Ring-3 Zero-Code Boundary & No Direct External File Fetch (`RULE-15`)**:
+   - When the user selects **Ring-3 Zero-Code Retention** (`ring3_skill_only` / *"do not save the files"*), **Antigravity is strictly forbidden** from searching for, listing, or reading the user's raw `.zip` archives or source folders outside the workspace (`C:\Users\bruno\Downloads`, `Desktop`, `Documents`, etc.) via `run_command`, `read_file`, or Python `zipfile`.
+   - All Ring-3 `.zip` and folder ingestion must be performed **100% by `ChronicleRAG` alone** via its Web Dashboard upload endpoints (`/api/ingest/file-item` / `/api/ingest/study-project-evolution`). Antigravity may only read the resulting de-identified outputs inside `pipeline_data/books/Book_Lit_Rules_<slug>.md`, `.agents/skills/<slug>/SKILL.md`, and `pipeline_data/ring3_snapshot_ledgers/<slug>.json`.
+10. **Zero Runtime ChromaDB, Living UX Engine 2.8 & 55-Tool `chronicle-rag` MCP Invariant (`RULE-16`)**:
+   - Runtime `chromadb` is retired across `ChronicleRAG` and all SetMiddle company projects in favor of **Unified PostgreSQL 17 (`pgvector` + `Apache AGE` + `TimescaleDB`)** on `:5432/chroniclerag` and `:5433/chroniclerag`. Never add `import chromadb`, `pip install chromadb`, or user-facing `ChromaDB` UI badges/labels.
+   - Enforce **UX Engine 2.8** (Anti-AI-Slop, Off-Canvas `<768px` Drawer, `@container` Card Tables, Thumb-Zone Bottom Bar, 5-State Abortable AI Input, WCAG 2.2 AA/AAA & PT `DL 82/2022`) and the **55-Tool `chronicle-rag` MCP Hub** across all SetMiddle workspaces (`PycharmProjects/chronicle-rag` and `browser_extension/`).
+
 
 
 
