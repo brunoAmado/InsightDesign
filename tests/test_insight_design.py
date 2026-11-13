@@ -119,6 +119,23 @@ class TestInsightDesign(unittest.TestCase):
         self.assertIn("injection_mold_lower_cavity", art["openscad_mold_code"])
         self.assertIn("UCX_Parametric_Part_01", art["game_engine_lods"])
 
+    def test_07_product_surface_flow_atlas_studio_mode(self) -> None:
+        r = self.client.post(
+            "/api/design/surface-atlas",
+            json={
+                "title": "ChronicleRAG 4-Axis Atlas",
+                "surfaces": ["GET /api/ecosystem/health-dashboard"],
+                "features": ["Dual-Stack 24/24 Health Monitor"],
+                "entities": ["ServiceProbeReceipt"],
+            },
+        )
+        self.assertEqual(r.status_code, 200)
+        body = r.json()
+        self.assertTrue(body["ok"])
+        self.assertIn("flowchart LR", body["mermaid_flowchart"])
+        self.assertIn("data-surface-flow-atlas", body["atlas_svg"])
+        self.assertEqual(self.client.post("/api/design/surface-atlas", json={"title": "   "}).status_code, 400)
+
 
 if __name__ == "__main__":
     unittest.main()

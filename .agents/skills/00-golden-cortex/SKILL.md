@@ -4,7 +4,7 @@ description: Compact Team Master Playbook for 00 Golden Cortex distilled from Ch
 ---
 
 # ⚡ Compact Specialist Skill: 00 Golden Cortex (`lit_Master_00_Golden_Cortex`)
-> **Token-Budget Guard (`RULE-12`)**: This skill is pre-distilled (`< 9 KB`) from `books/master_books/Book_Lit_Master_00_Golden_Cortex.md` (`21 KB`) to prevent context bloat.
+> **Token-Budget Guard (`RULE-12`)**: This skill is pre-distilled (`< 9 KB`) from `books/master_books/Book_Lit_Master_00_Golden_Cortex.md` (`22 KB`) to prevent context bloat.
 > **Active SetMiddle Ecosystem Baseline (`RULE-10..RULE-16`)**: **UX Engine 2.8** · **Unified PostgreSQL 17 (`pgvector` + `Apache AGE` + `TimescaleDB` on `:5432/:5433`, Zero Runtime `ChromaDB`)** · **55-Tool `chronicle-rag` MCP Hub** · **WCAG 2.2 AA/AAA & PT `DL 82/2022`**.
 > **Hierarchical Progressive Disclosure & Backtrace**:
 > - **Full Chapter TOC**: `chronicle-rag:read_book(identifier='lit_Master_00_Golden_Cortex', section='toc')`
@@ -13,7 +13,7 @@ description: Compact Team Master Playbook for 00 Golden Cortex distilled from Ch
 
 ## 🌟 Executive Synopsis (Level 1: How the Golden Cortex Works)
 Instead of merging 2,469+ books into a single 15 MB flat file that overflows context windows, ChronicleRAG organizes all accumulated intelligence into a **3-Tier Closed-Loop Hierarchy**:
-1. **Tier 0 — The Golden Cortex (`lit_Master_00_Golden_Cortex`)**: Holds the universal cross-domain engineering laws, the current **Epistemic Epoch (`v97`)**, the routing table to all Domain Master Books, and the **Upward Discovery Ledger**.
+1. **Tier 0 — The Golden Cortex (`lit_Master_00_Golden_Cortex`)**: Holds the universal cross-domain engineering laws, the current **Epistemic Epoch (`v112`)**, the routing table to all Domain Master Books, and the **Upward Discovery Ledger**.
 2. **Tier 1 — 35+ Domain Master Books (`lit_Master_<Domain>`)**: Thematic compilations with chapter-level SHA dirty-tracking (`<!-- path:source_<id>.md sha:<sha> -->`) and instant chapter slicing (`read_book(id, section='chapter:N')`).
 
 ## 📑 Key Chapters Index (Showing 13 of 13 Chapters)

@@ -39,6 +39,8 @@ description: Immune-to-Graphify-Install Engineering & High-Core Windows (<=61 wo
 10. **Zero Runtime ChromaDB, Living UX Engine 2.8 & 55-Tool `chronicle-rag` MCP Invariant (`RULE-16`)**:
    - Runtime `chromadb` is retired across `ChronicleRAG` and all SetMiddle company projects in favor of **Unified PostgreSQL 17 (`pgvector` + `Apache AGE` + `TimescaleDB`)** on `:5432/chroniclerag` and `:5433/chroniclerag`. Never add `import chromadb`, `pip install chromadb`, or user-facing `ChromaDB` UI badges/labels.
    - Enforce **UX Engine 2.8** (Anti-AI-Slop, Off-Canvas `<768px` Drawer, `@container` Card Tables, Thumb-Zone Bottom Bar, 5-State Abortable AI Input, WCAG 2.2 AA/AAA & PT `DL 82/2022`) and the **55-Tool `chronicle-rag` MCP Hub** across all SetMiddle workspaces (`PycharmProjects/chronicle-rag` and `browser_extension/`).
+11. **Mandatory `InsightPatent™` v2.0 Delegation for Patent, Prior-Art, Trademark (`TM`) & Zero-Leak RDAP Clearance (`RULE-17`)**:
+   - Whenever verifying whether a trademark/brand/game/product name is registered, checking authoritative domain RDAP (`.com`, `.gg`, `.io`, `.pt`, `.ai`), synthesizing coined titles, or stress-testing patent claims (`EPC Art. 54/56` / `INPI PPP`), **always delegate execution to `InsightPatent™` v2.0 first** via `delegate_patent_and_trademark_verification` (`chronicle-rag` MCP) or `POST /api/patent/delegate/verify-ip` rather than running manual web/RDAP loops inline, and audit the returned SHA-256 dossier as the user's Second Pair of Eyes (`RULE-14`).
 
 
 

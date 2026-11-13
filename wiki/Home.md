@@ -22,3 +22,7 @@ Welcome to the official knowledge base for **`InsightDesign™`** (`:4024 /api/d
 | 🔐 **Security & PT/EU Compliance (`RULE-11`)** | [03-Security-Privacy-and-PT-EU-Compliance.md](./03-Security-Privacy-and-PT-EU-Compliance.md) | [`SECURITY.md`](../SECURITY.md) · [`docs/SECURITY_AND_COMPLIANCE.md`](../docs/SECURITY_AND_COMPLIANCE.md) |
 | 🏛️ **Architecture & Deep-Dive Explanation** | [04-Architecture-and-Ecosystem-Explanation.md](./04-Architecture-and-Ecosystem-Explanation.md) | [`docs/ARCHITECTURE.md`](../docs/ARCHITECTURE.md) · [`docs/ARCHITECTURE_AND_EXPLANATION.md`](../docs/ARCHITECTURE_AND_EXPLANATION.md) |
 | 📂 **Complete `docs/` Index** | — | [`docs/DOCS_INDEX.md`](../docs/DOCS_INDEX.md) |
+
+## v1.2.0 4-Axis Product-Surface & User-Flow Atlas Studio Mode
+- Added product_surface_flow_atlas mode and POST /surface-atlas generating interactive SVG + Mermaid flowcharts.
+

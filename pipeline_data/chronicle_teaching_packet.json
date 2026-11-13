@@ -1,7 +1,7 @@
 {
   "status": "ok",
   "taught_by": "ChronicleRAG Golden Cortex (v2.8)",
-  "synced_at": "2026-11-11T14:28:58Z",
+  "synced_at": "2026-11-12T19:35:31Z",
   "service_name": "InsightDesign",
   "cluster_id": "InsightUIUX_and_InsightDesign",
   "specialty": "Procedural Three.js 3D, Blender bpy, Watertight .STL CAD & Canva/Slidev Decks (:4024)",
@@ -20,8 +20,10 @@
     "RULE-CA-08 (Full 38-Repo SetMiddle & InsightCore Catalog Coverage + DEMO/DEV Branch Parity)",
     "RULE-CA-09 (Centralized BiTemporalPointInTimeEngine via InsightTimeline :8095 + 1-Line InsightCore Facade)",
     "RULE-CA-10 (InsightCode 5-Layer PostgreSQL/pgvector/Apache AGE DDL & BDD Scenario AST Cartography)",
-    "RULE-CA-11 (Universal ChronicleRAG Teacher-Student Packet Synchronization Across All Specialties)"
+    "RULE-CA-11 (Universal ChronicleRAG Teacher-Student Packet Synchronization Across All Specialties)",
+    "RULE-17 (Mandatory Patent, Prior-Art, Trademark & Zero-Leak RDAP Delegation to InsightPatent v2.0 + Antigravity Second-Eyes Audit)"
   ],
   "bitemporal_engine_delegate": "insight_core_io.BiTemporalPointInTimeEngine -> insight_timeline.engine (:8095)",
-  "ast_cartographer_delegate": "insight_code.engine.extract_polyglot_ast_map (:4013)"
+  "ast_cartographer_delegate": "insight_code.engine.extract_polyglot_ast_map (:4013)",
+  "ip_and_trademark_delegate": "insight_patent.trademark_verifier.InsightPatentTrademarkVerifier.verify_patent_and_trademark_bundle (:8096 / /api/patent/delegate/verify-ip)"
 }

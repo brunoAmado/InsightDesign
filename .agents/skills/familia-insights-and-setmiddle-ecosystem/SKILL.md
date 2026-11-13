@@ -11,9 +11,8 @@ description: Compact Team Master Playbook for Familia Insights and SetMiddle Eco
 > - **Surgical Single Chapter + Origin Backtrace**: `chronicle-rag:read_book(identifier='lit_Master_Familia_Insights_and_SetMiddle_Ecosystem', section='chapter:<N>')` or `section='chapter:<keyword>'`
 > - **Recursive 'New Eyes' Critique**: `chronicle-rag:read_book(identifier='lit_Master_Familia_Insights_and_SetMiddle_Ecosystem', section='new_eyes')`
 
-## 🌟 Executive Synopsis: 10 Cross-Project Architectural Laws Learned from the 17 Repositories
+## 🌟 Executive Synopsis: 10 Cross-Project Architectural Laws Learned from the 53 Repositories
 1. **4-Layer Hybrid Polyglot Standard**: Every standalone product ships `rust_core/` (memory-safe crypto/math/interlocks) + `firmware/` or `node_sdk/` + `Python FastAPI Service & Mountable Router` + `ui_component/` (`CustomElement` Web Component with Shadow DOM).
-2. **Dual Deployment Topology (`DEMO_SHARED` vs `CLIENT_PROD`)**: Every module runs either as an isolated microservice (`:4001`–`:4009`, `:8050`, `:8080`, `:8095`, `:8096`) or mounted as a zero-overhead router inside `ChronicleRAG` (`:8765`).
-3. **Centralized Networking & 4-Tier Zero-Paid-Token LLM Proxy (`SetMiddleNetwork:4008`)**: All projects route LLM/VLM/Embedding calls through `CHIMERA` LiteLLM Proxy (`100.107.21.79:4000/v1`) -> `CHIMERA` vLLM (`:8011/v1`) -> `EVO` GPU Client (`100.91.34.106:1234/v1`) -> `IDE Agent Handover`.
+2. **Dual Deployment Topology (`DEMO_SHARED` on `demo` vs `DEV` on `dev` vs `CLIENT_PROD`)**: Launched via `C:\Users\bruno\PycharmProjects\SetMiddleCore\start_all_services.ps1`. Every module runs either on its dedicated port (`:3000`, `:4000`, `:5173`, `:5432`, `:5433`, `:6379`, `:8050`, `:8081`, `:8090`, `:8180`, `:18884`, `:4001`–`:4035`, `:8095`, `:8096`) or co-hosted inside `ChronicleRAG` (`:8765/projects/portal`).
 
 ## 📐 Distilled Engineering Rules & Actionable Patterns

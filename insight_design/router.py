@@ -5,12 +5,13 @@ Can be mounted standalone (`:4024`) or inside `ChronicleRAG` (`:8765`).
 
 from typing import Any, Dict
 from fastapi import APIRouter, Body, FastAPI, Query
-from fastapi.responses import Response
+from fastapi.responses import JSONResponse, Response
 
 from insight_design.engine import (
     InsightDesignEngine,
     SUPPORTED_DESIGN_MODES,
     export_open_source_canva_brand_and_slidev_deck,
+    generate_product_surface_flow_atlas,
 )
 
 
@@ -42,6 +43,16 @@ def create_insight_design_router() -> APIRouter:
         req = dict(payload or {})
         req.setdefault("mode", "onshape_parametric_mold_plan")
         return engine.execute(req)
+
+    @router.post("/surface-atlas")
+    def post_surface_flow_atlas(payload: Dict[str, Any] = Body(default={})) -> Any:
+        res = generate_product_surface_flow_atlas(
+            title=str(payload.get("title", "SetMiddle 4-Axis Product-Surface & User-Flow Atlas")),
+            surfaces=payload.get("surfaces"),
+            features=payload.get("features"),
+            entities=payload.get("entities"),
+        )
+        return res if res.get("ok") else JSONResponse(status_code=400, content=res)
 
     @router.post("/scrub")
     def scrub_text(payload: Dict[str, Any] = Body(default={})) -> Dict[str, Any]:

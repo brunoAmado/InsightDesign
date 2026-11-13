@@ -40,7 +40,71 @@ SUPPORTED_DESIGN_MODES: List[str] = [
     "interactive_draw_canvas",
     "playable_3d_game",
     "brand_svg_and_slidev_deck",
+    "product_surface_flow_atlas",
 ]
+
+
+def generate_product_surface_flow_atlas(
+    title: str = "SetMiddle 4-Axis Product-Surface & User-Flow Atlas",
+    surfaces: List[str] | None = None,
+    features: List[str] | None = None,
+    entities: List[str] | None = None,
+) -> Dict[str, Any]:
+    """
+    Studio Mode (`product_surface_flow_atlas`):
+    Renders a clean interactive SVG + Mermaid `flowchart LR` 4-Axis Product-Surface & User-Flow Atlas
+    (`Surfaces -> Features -> Entities -> Compartments`).
+    """
+    clean_title = str(title or "").strip()
+    if not clean_title:
+        return {"ok": False, "member": "InsightDesign", "error": "EMPTY_ATLAS_TITLE"}
+
+    surfs = surfaces or ["GET /api/compress/benchmark/latest", "POST /api/gravity/execute", "GET /api/chat/branches/{id}/smartlog"]
+    feats = features or ["CHIM 23.06x Lossless + Int8 Recall", "4-Axis Gravity Field", "Sapling Predecessor DAG"]
+    ents = entities or ["CHIMBytecodeFrame", "SemanticGravityNode", "MutationLedgerEdge"]
+
+    mermaid_lines = [
+        "flowchart LR",
+        '  subgraph Surfaces["1. Product Surfaces"]',
+    ]
+    for idx, s in enumerate(surfs[:6]):
+        mermaid_lines.append(f'    S{idx}["{s}"]')
+    mermaid_lines.append("  end")
+    mermaid_lines.append('  subgraph Features["2. User Features"]')
+    for idx, f in enumerate(feats[:6]):
+        mermaid_lines.append(f'    F{idx}["{f}"]')
+    mermaid_lines.append("  end")
+    mermaid_lines.append('  subgraph Entities["3. Domain Entities"]')
+    for idx, e in enumerate(ents[:6]):
+        mermaid_lines.append(f'    E{idx}["{e}"]')
+    mermaid_lines.append("  end")
+    for idx in range(min(len(surfs), len(feats), 6)):
+        mermaid_lines.append(f"  S{idx} --> F{idx}")
+    for idx in range(min(len(feats), len(ents), 6)):
+        mermaid_lines.append(f"  F{idx} --> E{idx}")
+
+    mermaid_str = "\n".join(mermaid_lines)
+    atlas_svg = (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" data-surface-flow-atlas="true">'
+        '<rect x="0" y="0" width="960" height="360" fill="#090d16"/>'
+        f'<text x="32" y="44" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="20" font-weight="600">{clean_title}</text>'
+        '<rect x="32" y="72" width="260" height="240" rx="12" fill="#0f172a" stroke="#4f46e5"/>'
+        '<rect x="350" y="72" width="260" height="240" rx="12" fill="#0f172a" stroke="#10b981"/>'
+        '<rect x="668" y="72" width="260" height="240" rx="12" fill="#0f172a" stroke="#818cf8"/>'
+        '</svg>'
+    )
+    return {
+        "ok": True,
+        "member": "InsightDesign",
+        "mode": "product_surface_flow_atlas",
+        "title": clean_title,
+        "surfaces_count": len(surfs),
+        "features_count": len(feats),
+        "entities_count": len(ents),
+        "mermaid_flowchart": mermaid_str,
+        "atlas_svg": atlas_svg,
+        "cas_atlas_uri": build_cas_uri(atlas_svg),
+    }
 
 
 def _build_watertight_cuboid_ascii_stl(name: str, w: float, d: float, h: float) -> str:
@@ -227,7 +291,7 @@ class InsightDesignEngine:
         return {
             "ok": True,
             "product": "InsightDesign™",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "port": self.DEFAULT_PORT,
             "api_prefix": self.API_PREFIX,
             "core_tier": "insightCoreAI + insightCoreIO",
