@@ -13,6 +13,8 @@
 **So that** I receive human-readable Data Science insights, while the DevOps Time-Lapse KPI Engine automatically logs `timestamp_iso`, `elapsed_ms`, queue state, and a `SHA-256` audit receipt.
 
 ## Ingested Legacy & Project-Root Documentation Grounding
+- `AGENTS.md`
+- `GEMINI.md`
 - `README.md`
 - `SECURITY.md`
 - `docs/ARCHITECTURE.md`
@@ -23,8 +25,6 @@
 - `docs/SECURITY_AND_COMPLIANCE.md`
 - `docs/epics/insightdesign-3d-threejs-blender-cad-draw-and-games-engine.epic.md`
 - `docs/stories/blender-bpy-and-watertight-parametric-cad-stl-enclosure.feature`
-- `docs/stories/blender-bpy-and-watertight-parametric-cad-stl-enclosure.story.md`
-- `docs/stories/interactive-vector-draw-canvas-and-playable-wasd-3d-game.feature`
 
 ## Verified Domain Capabilities
 - Three.js WebGL/WebGPU interactive 3D scene and playable WASD inspection generator

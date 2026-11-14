@@ -4,7 +4,7 @@ description: Compact Team Master Playbook for 00 Golden Cortex distilled from Ch
 ---
 
 # ⚡ Compact Specialist Skill: 00 Golden Cortex (`lit_Master_00_Golden_Cortex`)
-> **Token-Budget Guard (`RULE-12`)**: This skill is pre-distilled (`< 9 KB`) from `books/master_books/Book_Lit_Master_00_Golden_Cortex.md` (`22 KB`) to prevent context bloat.
+> **Token-Budget Guard (`RULE-12`)**: This skill is pre-distilled (`< 9 KB`) from `books/master_books/Book_Lit_Master_00_Golden_Cortex.md` (`25 KB`) to prevent context bloat.
 > **Active SetMiddle Ecosystem Baseline (`RULE-10..RULE-16`)**: **UX Engine 2.8** · **Unified PostgreSQL 17 (`pgvector` + `Apache AGE` + `TimescaleDB` on `:5432/:5433`, Zero Runtime `ChromaDB`)** · **55-Tool `chronicle-rag` MCP Hub** · **WCAG 2.2 AA/AAA & PT `DL 82/2022`**.
 > **Hierarchical Progressive Disclosure & Backtrace**:
 > - **Full Chapter TOC**: `chronicle-rag:read_book(identifier='lit_Master_00_Golden_Cortex', section='toc')`
@@ -13,10 +13,10 @@ description: Compact Team Master Playbook for 00 Golden Cortex distilled from Ch
 
 ## 🌟 Executive Synopsis (Level 1: How the Golden Cortex Works)
 Instead of merging 2,469+ books into a single 15 MB flat file that overflows context windows, ChronicleRAG organizes all accumulated intelligence into a **3-Tier Closed-Loop Hierarchy**:
-1. **Tier 0 — The Golden Cortex (`lit_Master_00_Golden_Cortex`)**: Holds the universal cross-domain engineering laws, the current **Epistemic Epoch (`v112`)**, the routing table to all Domain Master Books, and the **Upward Discovery Ledger**.
+1. **Tier 0 — The Golden Cortex (`lit_Master_00_Golden_Cortex`)**: Holds the universal cross-domain engineering laws, the current **Epistemic Epoch (`v129`)**, the routing table to all Domain Master Books, and the **Upward Discovery Ledger**.
 2. **Tier 1 — 35+ Domain Master Books (`lit_Master_<Domain>`)**: Thematic compilations with chapter-level SHA dirty-tracking (`<!-- path:source_<id>.md sha:<sha> -->`) and instant chapter slicing (`read_book(id, section='chapter:N')`).
 
-## 📑 Key Chapters Index (Showing 13 of 13 Chapters)
+## 📑 Key Chapters Index (Showing 17 of 17 Chapters)
 - **Chapter 1**: The 7 Universal Cross-Domain Golden Axioms
 - **Chapter 2**: Closed-Loop Bidirectional 'New Eyes' Re-Learning Protocol
 - **Chapter 3**: Hierarchical Routing Index to All Domain Master Books (`Tier 0 → Tier 1 → Tier 2`)
@@ -28,7 +28,11 @@ Instead of merging 2,469+ books into a single 15 MB flat file that overflows con
 - **Axiom 5 — Zero-Trust Security, PII Scrubbing & Immutable Audit Receipts (`RULE-11`)**: Scrub NIF/NISS/SNS/IBAN/PII and BYOK API keys before storage (`scrub_pii_and_secrets`) and log append-only `SHA-256` receipts for every state mutation.
 - **Axiom 6 — Tri-Modal Audio-Visual & Subtext Grounding (`Level 5.8–5.9D`)**: True comprehension requires aligning words (Whisper ASR + Learned Lexicon), vocal prosody (`F0`, `WPM`, pauses), and visual micro-gestures (`FACS AU` + `2.0s` post-utterance leakage).
 - **Axiom 7 — Closed-Loop Epistemic Feedback**: Learning is bidirectional: Master Books provide the lenses to re-audit old artifacts (`Downward Lens`), and newly uncovered insights from old artifacts feed back into the Master Books and Golden Cortex (`Upward Consolidation`).
-- **Axiom 8 — Bounded-Context Git Merkle Book Compilation (`InsightContextGit™` — `PPP6 / PT-EPO-CG-BOOK-2026-001`)**: Compile and verify arbitrarily long books inside small context windows ($W \le 4\text{K}$) using Overlapping Sliding Windows, an $O(1)$ Rolling State Ledger ($S_k$), parent-linked `SHA-256` Merkle Chapter Commits ($h_{\text{commit}}^{(k)}$), and Surgical Unified-Diff (`git diff`) Revisions.
+- **Axiom 8 — Bounded-Context Git Merkle Book Compilation (`InsightContextGit™` — `PPP13 / PT-EPO-CG-BOOK-2026-013`)**: Compile and verify arbitrarily long books inside small context windows ($W \le 4\text{K}$) using Overlapping Sliding Windows, an $O(1)$ Rolling State Ledger ($S_k$), parent-linked `SHA-256` Merkle Chapter Commits ($h_{\text{commit}}^{(k)}$), and Surgical Unified-Diff (`git diff`) Revisions.
 - **Axiom 9 — Discrete $N$-Body Semantic Gravitation & ER=EPR Wormhole Bridges (`InsightGravity™` — `PPP5 / PT-EPO-SG-AST-2026-001`)**: Replace flat cosine retrieval with Conceptual & AST God-Node Mass ($M_j$), Plummer-Softened Semantic Potential Wells ($\Phi_i$), Space-Time Membrane (STM) Graph Laplacian Curvature ($\Delta \Phi_i$), and Non-Local `ER=EPR` Wormhole Tunneling ($\tau_{uv}$) with Epistemic Basin Abstention.
+- **Axiom 10 — 4-Axis Product Topology & `0.20x` Orphan-Route Gravity (`InsightCode v1.2.0` + `InsightGravity v1.2.1`)**: Map repositories across `Surfaces`, `Features`, `Entities`, and `Compartments` while applying a `0.20x` gravitational mass decay to unreachable dead backend routes and accelerating large manifolds via exact metric `EMeans`, Barnes-Hut $O(N \log K)$ multipole, and `PUPPI` local pileup suppression.
+- **Axiom 11 — Sub-10KB Anchor-Preserving Salience, Matryoshka Quantization & `CHIM\x02` Codec (`InsightCompress v1.2.0` — `PPP3`)**: Preserve `100%` of `SHA-256` receipts, statutory/arXiv citations, and section headers under strict `<= 9,500`-char MCP budgets (`RULE-12`), paired with symmetric `Int8` Matryoshka vector quantization (`3.97x`, `>= 94.8%` Recall@10) and 22-byte 64-bit bit-packed `CHIM\x02` frames (`23.06x` lossless).
+- **Axiom 12 — Clean-Room Merkle Predecessor DAG, `EU AI Act Art. 15` Invariant Compilers & Blind A/B Skill-Eval Triad (`PPP13`)**: Track non-destructive `amend`/`unamend`/`fold`/`split`/`undo` predecessor links with `smartlog` trunk-noise suppression (`0% GPL-2.0`), enforce compiled security/accessibility invariants (`InsightGuard`/`InsightInclude`), and validate skill promotions via Blind A/B Comparator + Rubric Grader (`arXiv:2306.05685`).
+- **Axiom 13 — 3-Layer Semantic-Kinetic-Action Ontology (`ontology_engine.py`) & Platform-Locked Sticky-Folder Isolation**: Pair 6-Mode GraphRAG (`pathrag`, `hipporag`, `community`, `causal_dag`, `dual_level`, `ontology`) with OWL/SHACL domain-range validation, SKOS canonical alias resolution, bi-temporal half-life decay, and governed `ActionType` tool/API bindings (`RULE-11`/`RULE-17`), while preventing sticky browser-extension folders (`audible_audiobooks`, `udemy_courses`) from polluting cross-domain URL ingestions.
 
 ## 📐 Distilled Engineering Rules & Actionable Patterns

@@ -4,7 +4,7 @@ description: Compact Team Master Playbook for Familia Insights and SetMiddle Eco
 ---
 
 # ⚡ Compact Specialist Skill: Familia Insights and SetMiddle Ecosystem (`lit_Master_Familia_Insights_and_SetMiddle_Ecosystem`)
-> **Token-Budget Guard (`RULE-12`)**: This skill is pre-distilled (`< 9 KB`) from `books/master_books/Book_Lit_Master_Familia_Insights_and_SetMiddle_Ecosystem.md` (`30 KB`) to prevent context bloat.
+> **Token-Budget Guard (`RULE-12`)**: This skill is pre-distilled (`< 9 KB`) from `books/master_books/Book_Lit_Master_Familia_Insights_and_SetMiddle_Ecosystem.md` (`35 KB`) to prevent context bloat.
 > **Active SetMiddle Ecosystem Baseline (`RULE-10..RULE-16`)**: **UX Engine 2.8** · **Unified PostgreSQL 17 (`pgvector` + `Apache AGE` + `TimescaleDB` on `:5432/:5433`, Zero Runtime `ChromaDB`)** · **55-Tool `chronicle-rag` MCP Hub** · **WCAG 2.2 AA/AAA & PT `DL 82/2022`**.
 > **Hierarchical Progressive Disclosure & Backtrace**:
 > - **Full Chapter TOC**: `chronicle-rag:read_book(identifier='lit_Master_Familia_Insights_and_SetMiddle_Ecosystem', section='toc')`

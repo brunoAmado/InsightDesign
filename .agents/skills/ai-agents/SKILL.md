@@ -4,7 +4,7 @@ description: Compact Team Master Playbook for ai agents distilled from Chronicle
 ---
 
 # ⚡ Compact Specialist Skill: ai agents (`lit_Master_ai_agents`)
-> **Token-Budget Guard (`RULE-12`)**: This skill is pre-distilled (`< 9 KB`) from `books/master_books/Book_Lit_Master_ai_agents.md` (`230 KB`) to prevent context bloat.
+> **Token-Budget Guard (`RULE-12`)**: This skill is pre-distilled (`< 9 KB`) from `books/master_books/Book_Lit_Master_ai_agents.md` (`233 KB`) to prevent context bloat.
 > **Active SetMiddle Ecosystem Baseline (`RULE-10..RULE-16`)**: **UX Engine 2.8** · **Unified PostgreSQL 17 (`pgvector` + `Apache AGE` + `TimescaleDB` on `:5432/:5433`, Zero Runtime `ChromaDB`)** · **55-Tool `chronicle-rag` MCP Hub** · **WCAG 2.2 AA/AAA & PT `DL 82/2022`**.
 > **Hierarchical Progressive Disclosure & Backtrace**:
 > - **Full Chapter TOC**: `chronicle-rag:read_book(identifier='lit_Master_ai_agents', section='toc')`
@@ -43,10 +43,19 @@ Team-shared Master Thematic Book consolidating **77 chapters** and **77 source b
 - *(+52 additional chapters indexed in `Book_Lit_Master_ai_agents.md`)*
 
 ## 📐 Distilled Engineering Rules & Actionable Patterns
+### Chapter 76 [If you look on your computer right now , one of the best AI tools you could ever have (🛡️ 9.4/10 | PT: 9.6/10)]
+- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.6/10): Complies with Portugal's **Decreto-Lei n.º 82/2022** (European Accessibility Act) and **Decreto-Lei n.º 83/2018** (EN 301 549 / WCAG 2.2 AA). If collecting user data or payments in Portugal, pair with *
+
+### Chapter 77 [Database Size Optimization and Binary Deprecation > **Source Link**: C:/Users/bruno/I (🛡️ 9.4/10 | PT: 9.6/10)]
+- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.6/10): Complies with Portugal's **Decreto-Lei n.º 82/2022** (European Accessibility Act) and **Decreto-Lei n.º 83/2018** (EN 301 549 / WCAG 2.2 AA). If collecting user data or payments in Portugal, pair with *
+1. **Key Bloat in RocksDB**: Each token entry was stored using redundant ASCII prefixes: * `seq:<hex_sequence>:<tokenString>` (~45 bytes per key) * `token:<tokenString>` (~40 bytes per key) * `subseq:<tokenString>:<order>` (~35 bytes per key) * **Total Footpri
+2. **Off-Heap Block Cache Contention**: High byte volume per key forced RocksDB's block cache to evict frequently used index pages, increasing NVMe/SSD read latencies.
+3. **Recipe File Inflation**: Encoding small 2-byte sequences required ~22 bytes of text in `.recipe.json`, resulting in negative compression for high-entropy regions. --- ## 2. 64-Bit Packed Binary Coordinate Layout (Zero-Loss Bijective Mapping) Every token c
+
 ### Chapter 1 [Every headline today says AI agents are a cybersecurity threat running wild across th (🛡️ 9.4/10 | PT: 9.6/10)]
 - **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.6/10): Complies with Portugal's **Decreto-Lei n.º 82/2022** (European Accessibility Act) and **Decreto-Lei n.º 83/2018** (EN 301 549 / WCAG 2.2 AA). If collecting user data or payments in Portugal, pair with *
 
-### Chapter 2 [[eBook]
+### Chapter 2 [[eBook] Building Applications With Ai Agents: Designing and Implementing Multiagent S (🛡️ 9.4/10 | PT: 9.6/10)]
 - **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.6/10): Complies with Portugal's **Decreto-Lei n.º 82/2022** (European Accessibility Act) and **Decreto-Lei n.º 83/2018** (EN 301 549 / WCAG 2.2 AA). If collecting user data or payments in Portugal, pair with *
 
 ### Chapter 3 [Uh oh, here we go again. Everybody is calling it an agent outbreak. It is not. It is  (🛡️ 9.5/10 | PT: 9.8/10)]
@@ -64,17 +73,3 @@ Team-shared Master Thematic Book consolidating **77 chapters** and **77 source b
 ### Chapter 7 [9 Key Concepts for Building AI Agents in 2026 | GenAI Works posted on the topic | Lin (🛡️ 9.5/10 | PT: 9.8/10)]
 - **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL & EU COMPLIANCE (9.8/10 — CNPD / GDPR Art. 17 & EU AI Act): 1) **GDPR Art. 17 (Direito ao Esquecimento / CNPD Portugal)**: Storing user/company facts in a RAG index allows instant 1ms erasure upon request, whereas bak
 - **Referenced Tools / Repos**: https://lnkd.in/e3s6UgMg, https://lnkd.in/e4BU-KsE
-
-### Chapter 8 [Every headline in the news today says that AI agents are a major... — @mattmurphyai (🛡️ 9.4/10 | PT: 9.6/10)]
-- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.6/10): Complies with Portugal's **Decreto-Lei n.º 82/2022** (European Accessibility Act) and **Decreto-Lei n.º 83/2018** (EN 301 549 / WCAG 2.2 AA). If collecting user data or payments in Portugal, pair with *
-
-### Chapter 9 [Unlock advanced cybersecurity capabilities for your AI agents with this incredible op (🛡️ 9.1/10 | PT: 9.4/10)]
-- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.4/10): Aligns with **EU AI Act (Reg. 2024/1689)** transparency/oversight rules, **GDPR / CNPD (Lei n.º 58/2019)** data minimization, and **CNCS Portugal** cybersecurity baseline.
-- **Referenced Tools / Repos**: https://github.com/mukul975/Anthropic-Cybersecurity-Skills
-
-### Chapter 10 [Your AI agent forgot what it was doing halfway through the job. Step one was clean. B (🛡️ 9.5/10 | PT: 9.8/10)]
-- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL & EU COMPLIANCE (9.8/10 — CNPD / GDPR Art. 17 & EU AI Act): 1) **GDPR Art. 17 (Direito ao Esquecimento / CNPD Portugal)**: Storing user/company facts in a RAG index allows instant 1ms erasure upon request, whereas bak
-
-### Chapter 11 [The State of AI and Software Engineering: Code is Cheaper but Expertise are More Valu (🛡️ 9.5/10 | PT: 9.8/10)]
-- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL & EU COMPLIANCE (9.8/10 — CNPD / GDPR Art. 17 & EU AI Act): 1) **GDPR Art. 17 (Direito ao Esquecimento / CNPD Portugal)**: Storing user/company facts in a RAG index allows instant 1ms erasure upon request, whereas bak
-- **Referenced Tools / Repos**: https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/, https://doi.org/10.2189/asqu.52.3.387, https://www.aeaweb.org/articles?id=10.1257/aeri.20180582, https://a16z.com/

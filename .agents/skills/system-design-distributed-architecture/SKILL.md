@@ -43,6 +43,18 @@ Team-shared Master Thematic Book consolidating **115 chapters** and **115 source
 - *(+1036 additional chapters indexed in `Book_Lit_Master_System_Design_Distributed_Architecture.md`)*
 
 ## 📐 Distilled Engineering Rules & Actionable Patterns
+### Chapter 01: 💬 WhatsApp Conversation Note (Bruno Pires Amado (Eu)) > **Shared in WhatsApp (Bruno Pires Amado (Eu))**:
+- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.4/10): Aligns with **EU AI Act (Reg. 2024/1689)** transparency/oversight rules, **GDPR / CNPD (Lei n.º 58/2019)** data minimization, and **CNCS Portugal** cybersecurity baseline.
+- **✅ When It IS Valid (Exact Conditions & Thresholds)**: Valid when paired with local-first inference, row-level security, immutable audit logs, and GDPR Art. 17 RAG erasure.
+- **🛠️ What to Do Instead (Safe & Legal `PT` Strategy)**: Keep volatile facts/PII in local RAG storage (not SFT weights) and enforce strict API/key isolation.
+
+### Chapter 01: 💬 WhatsApp Conversation Note (Bruno Pires Amado (Eu)) > **Shared in WhatsApp (Bruno Pires Amado (Eu))**:
+- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.4/10): Aligns with **EU AI Act (Reg. 2024/1689)** transparency/oversight rules, **GDPR / CNPD (Lei n.º 58/2019)** data minimization, and **CNCS Portugal** cybersecurity baseline.
+- **✅ When It IS Valid (Exact Conditions & Thresholds)**: Valid when paired with local-first inference, row-level security, immutable audit logs, and GDPR Art. 17 RAG erasure.
+- **🛠️ What to Do Instead (Safe & Legal `PT` Strategy)**: Keep volatile facts/PII in local RAG storage (not SFT weights) and enforce strict API/key isolation.
+* Opening the browser's Developer Tools.
+- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.4/10): Aligns with **EU AI Act (Reg. 2024/1689)** transparency/oversight rules, **GDPR / CNPD (Lei n.º 58/2019)** data minimization, and **CNCS Portugal** cybersecurity baseline.
+
 ### Chapter 1 [10 system design concepts every software engineer should know. Scalability. Availabil (🛡️ 9.9/10 | PT: 10.0/10)]
 - **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (`PT`) & EUROPEAN UNION (`EU`) MANDATORY 5-PILLAR AI PROJECT COMPLIANCE (10.0/10):
 - **✅ When It IS Valid (Exact Conditions & Thresholds)**: Enforce across all 68+ local AI, RAG, IoT, Web, and SaaS repositories via ChronicleRAG's Master Playbooks and `.agents/skills/` auto-sync.
@@ -50,14 +62,16 @@ Team-shared Master Thematic Book consolidating **115 chapters** and **115 source
 - **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.4/10): Aligns with **EU AI Act (Reg. 2024/1689)** transparency/oversight rules, **GDPR / CNPD (Lei n.º 58/2019)** data minimization, and **CNCS Portugal** cybersecurity baseline.
 - **✅ When It IS Valid (Exact Conditions & Thresholds)**: Valid when paired with local-first inference, row-level security, immutable audit logs, and GDPR Art. 17 RAG erasure.
 
-### Chapter 107 [Humble Tech Book Bundle: Tech Career Library In The Age Of Ai By Apress (🛡️ 9.1/10 | PT: 9.4/10)]
+### Chapter 01: 💬 WhatsApp Conversation Note (Bruno Pires Amado (Eu)) > **Shared in WhatsApp (Bruno Pires Amado (Eu))**:
 - **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.4/10): Aligns with **EU AI Act (Reg. 2024/1689)** transparency/oversight rules, **GDPR / CNPD (Lei n.º 58/2019)** data minimization, and **CNCS Portugal** cybersecurity baseline.
 - **✅ When It IS Valid (Exact Conditions & Thresholds)**: Valid when paired with local-first inference, row-level security, immutable audit logs, and GDPR Art. 17 RAG erasure.
 - **🛠️ What to Do Instead (Safe & Legal `PT` Strategy)**: Keep volatile facts/PII in local RAG storage (not SFT weights) and enforce strict API/key isolation.
 
-### Chapter 108 [I never pushed my API key to GitHub and still got leaked — @sayed.developer (🛡️ 9.1/10 | PT: 9.4/10)]
+### Chapter 01: 💬 WhatsApp Conversation Note (Bruno Pires Amado (Eu)) > **Shared in WhatsApp (Bruno Pires Amado (Eu))**:
 - **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.4/10): Aligns with **EU AI Act (Reg. 2024/1689)** transparency/oversight rules, **GDPR / CNPD (Lei n.º 58/2019)** data minimization, and **CNCS Portugal** cybersecurity baseline.
 - **✅ When It IS Valid (Exact Conditions & Thresholds)**: Valid when paired with local-first inference, row-level security, immutable audit logs, and GDPR Art. 17 RAG erasure.
 - **🛠️ What to Do Instead (Safe & Legal `PT` Strategy)**: Keep volatile facts/PII in local RAG storage (not SFT weights) and enforce strict API/key isolation.
 * Opening the browser's Developer Tools.
-- **🇵🇹 Local (`PT`) Adaptation**: PORTUGAL (PT — 9.4/10): Aligns with **EU AI Act (Reg. 2024/1689)** transparency/oversight rules, **GDPR / CNPD (Lei n.º 58/2019)** data minimization, and **CNCS Portugal** cybersecurity baseline.
+
+*(Truncated at 8500 chars per RULE-12; query `lit_Master_System_Design_Distributed_Architecture` via MCP for full chapters.)*
+
